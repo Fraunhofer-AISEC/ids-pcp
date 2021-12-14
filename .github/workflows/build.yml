@@ -26,4 +26,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: sign_artefact
-          path: sign_artefact
+          path: pcp_utils/sign_artefact
