@@ -1,0 +1,11 @@
+{
+  "CN": "Device SubCA",
+  "names": [
+  {
+    "C": "DE",
+    "L": "Garching",
+    "O": "Fraunhofer AISEC",
+    "OU": "Device SubCA"
+  }
+  ]
+}

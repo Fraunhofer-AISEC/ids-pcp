@@ -1,0 +1,29 @@
+{
+    "type": "OS Manifest",
+    "name": "de.fhg.aisec.ids.os.srtm",
+    "developerCommonName": "AISEC",
+    "version" : "20210717200000",
+	"validity" : {
+		"notBefore": "20210717200000",
+		"notAfter": "20240717200000"
+	},
+    "description": "AISEC PoC Demonstrator SRTM OS Manifest",
+    "certificationLevel" : 3,
+    "rtms": [
+        "de.fhg.aisec.ids.rtm.srtm"
+    ],
+    "verifications": [
+        {
+            "type": "TPM Verification",
+            "name": "Static Operating System",
+            "pcr": 8,
+            "sha256": "6f989ae312e60f6bf43f91e9630754f30f9d26cc67431bd5f42076b3cc13d940"
+        },
+        {
+            "type": "TPM Verification",
+            "name": "Static Operating System",
+            "pcr": 9,
+            "sha256": "a2e7e6725903b25610df443f7f296b861699a22a9fa1fabf1d408238a7c91d7e"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "type": "RTM Manifest",
+    "name": "de.fhg.aisec.ids.rtm.srtm",
+    "developerCommonName": "AISEC",
+    "version" : "20210717200000",
+	"validity" : {
+		"notBefore": "20210717200000",
+		"notAfter": "20240717200000"
+	},
+    "description": "AISEC PoC Demonstrator SRTM RTM Manifest",
+    "certificationLevel" : 3,
+    "verifications": [
+        {
+            "type": "TPM Verification",
+            "name": "BIOS Digest",
+            "pcr": 0,
+            "sha256": "ebd4a2b9735a18c9ad1293d2d8eae529b2c23d14d34efcf50302b88e13f9b493"
+        },
+        {
+            "type": "TPM Verification",
+            "name": "BIOS Configuration",
+            "pcr": 1,
+            "sha256": "4e3b53cd3475483b55fb88a3e2874758f9f26d318e552311cf56ab89a17a1647"
+        },
+        {
+            "type": "TPM Verification",
+            "name": "Option ROMs",
+            "pcr": 2,
+            "sha256": "3d458cfe55cc03ea1f443f1562beec8df51c75e14a9fcf9a7234a13f198e7969"
+        },
+        {
+            "type": "TPM Verification",
+            "name": "Option ROM Configuration",
+            "pcr": 3,
+            "sha256": "3d458cfe55cc03ea1f443f1562beec8df51c75e14a9fcf9a7234a13f198e7969"
+        },
+        {
+            "type": "TPM Verification",
+            "name": "Initial program loader code ",
+            "pcr": 4,
+            "sha256": "d5071405d6984ff479ae1feda78f5caff8d90080a1ed0274bd34c0c17305ed5e"
+        },
+        {
+            "type": "TPM Verification",
+            "name": "Initial program loader code configuration",
+            "pcr": 5,
+            "sha256": "9457ad1a352ef1859afd1a836ab56423e18730a3c607007ceb7c3689f33411ef"
+        },
+        {
+            "type": "TPM Verification",
+            "name": "State transitions and wake events",
+            "pcr": 6,
+            "sha256": "3d458cfe55cc03ea1f443f1562beec8df51c75e14a9fcf9a7234a13f198e7969"
+        },
+        {
+            "type": "TPM Verification",
+            "name": "Secure Boot Configuration",
+            "pcr": 7,
+            "sha256": "9b24172b9289778dbe668c4c5ce7a481be80000bddf169f3a681efa399fd1337"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "CN": "IDS User SubCA",
+  "names": [
+  {
+    "C": "DE",
+    "L": "Garching",
+    "O": "Fraunhofer AISEC",
+    "OU": "User SubCA"
+  }
+  ]
+}
