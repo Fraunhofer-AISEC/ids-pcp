@@ -11,52 +11,154 @@
     "certificationLevel" : 3,
     "verifications": [
         {
-            "type": "TPM Verification",
-            "name": "BIOS Digest",
-            "pcr": 0,
-            "sha256": "ebd4a2b9735a18c9ad1293d2d8eae529b2c23d14d34efcf50302b88e13f9b493"
+            "type":"TPM Verification",
+            "name":"EV_S_CRTM_VERSION",
+            "pcr":0,
+            "sha256":"d4720b4009438213b803568017f903093f6bea8ab47d283db32b6eabedbbf155"
         },
         {
-            "type": "TPM Verification",
-            "name": "BIOS Configuration",
-            "pcr": 1,
-            "sha256": "4e3b53cd3475483b55fb88a3e2874758f9f26d318e552311cf56ab89a17a1647"
+            "type":"TPM Verification",
+            "name":"EV_POST_CODE",
+            "pcr":0,
+            "sha256":"e2f876592a41e239711ebc0ef2bd22e32e3fa217846ca082e0216ad2f3246a67"
         },
         {
-            "type": "TPM Verification",
-            "name": "Option ROMs",
-            "pcr": 2,
-            "sha256": "3d458cfe55cc03ea1f443f1562beec8df51c75e14a9fcf9a7234a13f198e7969"
+            "type":"TPM Verification",
+            "name":"EV_SEPARATOR",
+            "pcr":0,
+            "sha256":"df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
         },
         {
-            "type": "TPM Verification",
-            "name": "Option ROM Configuration",
-            "pcr": 3,
-            "sha256": "3d458cfe55cc03ea1f443f1562beec8df51c75e14a9fcf9a7234a13f198e7969"
+            "type":"TPM Verification",
+            "name":"EV_SEPARATOR",
+            "pcr":1,
+            "sha256":"df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
         },
         {
-            "type": "TPM Verification",
-            "name": "Initial program loader code ",
-            "pcr": 4,
-            "sha256": "d5071405d6984ff479ae1feda78f5caff8d90080a1ed0274bd34c0c17305ed5e"
+            "type":"TPM Verification",
+            "name":"EV_EFI_VARIABLE_BOOT",
+            "pcr":1,
+            "sha256":"810e27f6896fded6b4f454eec9f84fd5d54ea8e1e2e06a2337935b1046c4ae46"
         },
         {
-            "type": "TPM Verification",
-            "name": "Initial program loader code configuration",
-            "pcr": 5,
-            "sha256": "9457ad1a352ef1859afd1a836ab56423e18730a3c607007ceb7c3689f33411ef"
+            "type":"TPM Verification",
+            "name":"EV_EFI_VARIABLE_BOOT",
+            "pcr":1,
+            "sha256":"9de2367eb7db1c4f19d7940f7bd9667c88f1bdea5f9a93f5e220e7e88ecf06e2"
         },
         {
-            "type": "TPM Verification",
-            "name": "State transitions and wake events",
-            "pcr": 6,
-            "sha256": "3d458cfe55cc03ea1f443f1562beec8df51c75e14a9fcf9a7234a13f198e7969"
+            "type":"TPM Verification",
+            "name":"EV_EFI_VARIABLE_BOOT",
+            "pcr":1,
+            "sha256":"e995be6d0c0dbcfe2249d4057d0248b4991624c5db1330a81b7f2ae9fa82b128"
         },
         {
-            "type": "TPM Verification",
-            "name": "Secure Boot Configuration",
-            "pcr": 7,
-            "sha256": "9b24172b9289778dbe668c4c5ce7a481be80000bddf169f3a681efa399fd1337"
+            "type":"TPM Verification",
+            "name":"EV_EFI_VARIABLE_BOOT",
+            "pcr":1,
+            "sha256":"259a443dde2bafbc57da3eb471f746bfca2cdb9e84fc91b7fbf6665ec93e9b7a"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_EFI_VARIABLE_BOOT",
+            "pcr":1,
+            "sha256":"35791edd25151233f872a884259ce4b6c50238aa5b533c23149b353984b7c450"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_SEPARATOR",
+            "pcr":2,
+            "sha256":"df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_SEPARATOR",
+            "pcr":3,
+            "sha256":"df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_SEPARATOR",
+            "pcr":4,
+            "sha256":"df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_EFI_BOOT_SERVICES_APPLICATION",
+            "pcr":4,
+            "sha256":"2ea4cb6a1f1eb1d3dce82d54fde26ded243ba3e18de7c6d211902a594fe56788"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_EFI_BOOT_SERVICES_APPLICATION",
+            "pcr":4,
+            "sha256":"5d977a57daa3d2adcccd838fc8fe6594dcd6ae59e60a75757e6833c799189841"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_SEPARATOR",
+            "pcr":5,
+            "sha256":"df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_EFI_GPT_EVENT",
+            "pcr":5,
+            "sha256":"82f6a2957420cca0d9f5548f32dcdaa393196ab3ccdd5bad22a27ecabe2adb11"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_SEPARATOR",
+            "pcr":6,
+            "sha256":"df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_EFI_VARIABLE_DRIVER_CONFIG",
+            "pcr":7,
+            "sha256":"ccfc4bb32888a345bc8aeadaba552b627d99348c767681ab3141f5b01e40a40e"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_EFI_VARIABLE_DRIVER_CONFIG",
+            "pcr":7,
+            "sha256":"78684298cc54cf7550bd38d3c378eeee59d3ae027632cda6f507ac5ccd257b35"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_EFI_VARIABLE_DRIVER_CONFIG",
+            "pcr":7,
+            "sha256":"63c0ee78eb49b91ac213b03768a827ebf9b12370f65851b19a883bf32eaf2a14"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_EFI_VARIABLE_DRIVER_CONFIG",
+            "pcr":7,
+            "sha256":"59760e559e44bf37935d02ed8bb6cf7c809c14adee9c78d78c85bb0251dac910"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_EFI_VARIABLE_DRIVER_CONFIG",
+            "pcr":7,
+            "sha256":"a044b4ce4a4dca9af312c897dc56ee1727c385eb88f7cfb9092b8265029d5b1e"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_SEPARATOR",
+            "pcr":7,
+            "sha256":"df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_EFI_VARIABLE_AUTHORITY",
+            "pcr":7,
+            "sha256":"4d4a8e2c74133bbdc01a16eaf2dbb5d575afeb36f5d8dfcf609ae043909e2ee9"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_EFI_VARIABLE_AUTHORITY",
+            "pcr":7,
+            "sha256":"5e19450c7a75acd95f6af49d0e32b74142972d9dd4c1b8068450653683a13016"
         }
     ]
 }

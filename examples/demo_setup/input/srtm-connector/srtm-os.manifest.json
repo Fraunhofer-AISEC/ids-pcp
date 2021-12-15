@@ -14,16 +14,456 @@
     ],
     "verifications": [
         {
-            "type": "TPM Verification",
-            "name": "Static Operating System",
-            "pcr": 8,
-            "sha256": "6f989ae312e60f6bf43f91e9630754f30f9d26cc67431bd5f42076b3cc13d940"
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"d2b92983e66aff99982fe5af55e0f9277dc0f8879934e17b00147e1f4156179e"
         },
         {
-            "type": "TPM Verification",
-            "name": "Static Operating System",
-            "pcr": 9,
-            "sha256": "a2e7e6725903b25610df443f7f296b861699a22a9fa1fabf1d408238a7c91d7e"
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"82a4a14e43a4f76118ae63285d0af05af139f260fae57b2c20737a1c1df3382b"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"ce8124bc1b0fbc0cb5cd47338ca0c7d5f5446d79936e443a201d96b192a7bd65"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"3a118940bf2675007df3368cb6d45cf2756f328d3e75daf69a971dd21bd1bc58"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"4568361fb7581b31a42d645ab534302fb9f742adaa37b7fde152215d69e259fb"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"09f17d4dfb4b97f16246632c21b1ac2125c95c148899eee5069fbb1b34365513"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"4af0bb370c9e3b7982027d02e04c935e32d52b528007476bfc50d36d1b86815e"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"ce8124bc1b0fbc0cb5cd47338ca0c7d5f5446d79936e443a201d96b192a7bd65"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"4568361fb7581b31a42d645ab534302fb9f742adaa37b7fde152215d69e259fb"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"b73bf83aa3e5f0050ef97ee880d0fd31e4f62c41807e4a51044ba2ab39b733ba"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"fbf985ea9a6a7e3dbdf34b5eeec6a14d69de9460a90c9d884b9a6d38fcac847d"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"0e67e3f8d46db41448660d2d0728fa4f60df231ee9c3b554b31da0b5b736006b"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"7626abd8be7442c2e575364a3e95cb3a3b533c58afbba402d2bdabdff85d29c7"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"4568361fb7581b31a42d645ab534302fb9f742adaa37b7fde152215d69e259fb"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"d71353f5368eb2c1280590928128979bd96ea8db1e8c81493f7878383b76ab3b"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"82585929bcc1f531b83edb077a09855658f2098cdd90c86dcb506c71a3171b4e"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"1209580c5890d0bd8dae41056092f029ed97f2ae227c78a0698479a7c7f70489"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"37ea6a93fd7fe5be94df95ca82591692fe57d899eb3ca205811becc8ca110a6e"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"ac72f5f623d472a31f70152b2adcb310e0b8c17297ff2529089ba3a23714ab2f"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"3f3dc8a0440e436b26894efbc4052f74be22c098ec044145a058705d9dd02c1b"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"82a4a14e43a4f76118ae63285d0af05af139f260fae57b2c20737a1c1df3382b"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"4568361fb7581b31a42d645ab534302fb9f742adaa37b7fde152215d69e259fb"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"61caa54fc24ba8b3e79be63f375a08f374244e4ede8e0d6080060aa3fa5f7fbb"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"d3a793f471b6bfe8d783f5e629314cad4763d48986a8cd4df25475334b40f49b"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"207cda95fd859189d016c7c2cc03b9c05672984589e4809e1dcee665d629cf7d"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"6f18799fe0ecb5c4bb4c0695a3094dc9841c940c3b463e14c25e444246348a2a"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"f0b4b3c23103828ea2fa05044a2cfce5efc9d15e99ffb9c61d7349c1303741af"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"55d89da795b71e962db7378be2051bdf8a92aaac7d072ccd668d75dfa4da030a"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"b41342ba90f1d135a09408cce64a9d97814d2c8df9131036924a5bf47d97615c"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"a36de0798eb0ac94d6edf367749c0ced605c5b92d74b83312f94132434f549e5"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"f249e761a7e37510f8acf59142c117444c3aa1bc5a719ae7eab60d3b7109180a"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"22e041251eb54eeb3270245759aa3e8bd3b77a647db988b681b1eafc6960aa45"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"3152991609f6842a9020345fd99d79c46452fc8dcba6f81c1ecb91dadf4c75f3"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"0e9200b242319d4d79699c5ae6fa36f17c4a9568dfc094ed5bb250a2551d28e4"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"716ce335760b546fad1e7f980a68b9ab64b9e0a050f2c2da4ebddb7d3ebea559"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"fb29eca095a84ec2672c0c4367f5972b34135a8b50974cf0698d9b90ee44428f"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"b99843ca754608ac7eb3bb60728ffaf42bfa1c22b1c9ad609d4ae9ab3a9ad081"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"bf5d10a466c0f77818990a9d0fdcc8fa2c4561ba92912d5fbc9d4ac1e31a00fb"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"a57e067e286efc4eea89659d40f13a38cc1792e4277bed820ded674c94bf2ead"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"64bda8f65b1585d7868248a292c449660cc8f75075c10d87ae59a4db401ce119"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"cfa4676ffe751d1547e77a8d66a033b59b3eed3400d9b3a305d2601891ab0e59"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"4e7a22f96bae467df0f26975e0bf7614d6b92993301c65bae6a85c6530e460bf"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"ce2cc20777ba8d3bc75b662163c3abe370344d4bae17d75fb5bd408d1fb6badf"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"7626abd8be7442c2e575364a3e95cb3a3b533c58afbba402d2bdabdff85d29c7"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"4568361fb7581b31a42d645ab534302fb9f742adaa37b7fde152215d69e259fb"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"d71353f5368eb2c1280590928128979bd96ea8db1e8c81493f7878383b76ab3b"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"2fa8065d9ee309384d35f8d530186b776d26e1bb5632f89a46d56e93b140282b"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"15a5018b0177cf9c49c0b97911df67e7f2c193d3613e3fc4c9eb98a2b5d06fcc"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"b55d84bbb0a00f175ebbc6ca167f18dd6a9cb49b141535bfcc6c4ef9c53b1866"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"141dcfd03b1736e86f617122e7f31cffe89f7cf0faa773f1bced28f7f0c1fa13"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"6c4674d4c652ee67b98a6206d7541ccbf2d5dc0a18dae31ad66e82c794c49784"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"18865468f2e4bd9f0cc4ffdda1335f405d06df8d6ff183b373f50e08e81f924d"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"62cd76d31ca3d10d742e46c6ff171046ce19dd90f361a827fec6571e59c24794"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"b838a4d2860c81058105fbb1907a1fb7f60b65591b099b3b000d9b31d8d2fb20"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"17b2c31eafc75a43bf22879efcf82e4a3d26e212d7d73361c9e0755c37afacf7"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"4568361fb7581b31a42d645ab534302fb9f742adaa37b7fde152215d69e259fb"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"b370bc09bde97ab29e96ef73cf5f8826d39831001b1caba3f7f4f664be21d683"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"cbdc1a3032eb097d801a81e6beff87539401f3c5cb7712ae9dd590ed26e70326"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"f6323637f8936d07c47d31d9a905d7ba82c561e3aaf43eeeeb30491c47215422"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":9,
+            "sha256":"2e4234c851ddf251b0ffc935ee1db96b7befd4f2df869a5612e282de04c23fc0"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"0e3a17e0c48e42d79f4d1576e7f787c911239510586505c326143b9b268bdd65"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"f8b99f77983990e8804864cade91f361b5b6600cc2832febaef878ac8b44d27e"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"0ff199cdaf9520b7e7ef9c143ca11eccf5546f35156f02d57c1201daf4bd3fb9"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"36c3cac68b601a8a9cd7098cde6aa6f6d6a5f2ee512aab5c90837cfba2a0b9fe"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":8,
+            "sha256":"0f693a3995fdec16ad5a0d5f0b1301d3c889d81a8fa071f2fc55dd671c96b977"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":9,
+            "sha256":"da57c8832946e8c4563773cd57a3dd7892a34dc0fc8852e9b2f7703872ba26ee"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":9,
+            "sha256":"bc36d75f6c18f43b9ba234fca826aa4711ecb6b499e13ef7b1eca394d954c0b1"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":9,
+            "sha256":"5137257cdcec140bce7e0c83c1000df3f7ecf18de11bde46b8d32f49ba657791"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":9,
+            "sha256":"32fc7f5de8c0a5dc0b1e7eb609ca31a77eb3475539e1d97a4543dca1b9b26c57"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":9,
+            "sha256":"1b766f38a94927fe9b7bc1e809f0363e778e14c601e800faea271a2e75d3fc43"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":9,
+            "sha256":"46f888c52f36baf9b62d60bc8d06426a314aad5a0ff86a4362a91c2512a1df9c"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":9,
+            "sha256":"668b315729c39ad5f0a0b59f870b607776edeb425481b70a1de01b0a19c12e2d"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":9,
+            "sha256":"2e4234c851ddf251b0ffc935ee1db96b7befd4f2df869a5612e282de04c23fc0"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":9,
+            "sha256":"63a7e48a3a1e145f4a0ccf58ec69531292dfc7bcb428d9b95312768885c41819",
+            "description":"/boot/vmlinuz-5.8.0-59-generic"
+        },
+        {
+            "type":"TPM Verification",
+            "name":"EV_IPL",
+            "pcr":9,
+            "sha256":"325363986829261d3cda00b28a7c99ec45270cb549cc055b7e47d42b12aabd2f",
+            "description":"/boot/initrd.img-5.8.0-59-generic"
         }
     ]
 }
