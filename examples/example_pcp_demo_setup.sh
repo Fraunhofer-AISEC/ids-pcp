@@ -15,33 +15,40 @@
 # limitations under the License.
 
 PCP="../pcp.sh"
-DIR="./demo_setup"
+PKI_DIR="./demo_setup/pki"
+INPUT_DIR="./demo_setup/input"
+OUTPUT_DIR="./demo_setup/signed"
 
-printf "Using PCP=%s and DIR=%s\n" "$PCP" "$DIR"
+printf "Using PCP=%s, PKI_DIR=%s, INPUT_DIR=%s, and OUTPUT_DIR=%s\n" "$PCP" "$PKI_DIR" "$INPUT_DIR" "$OUTPUT_DIR"
 
 ca  () {
-  "$PCP" "$DIR" ca  "$@"
+  "$PCP" "$PKI_DIR" ca  "$@"
 }
 
 gen () {
-  "$PCP" "$DIR" gen "$@"
+  "$PCP" "$PKI_DIR" gen "$@"
 }
 
 eva () {
-  "$PCP" "$DIR" eva "$@"
+  "$PCP" "$PKI_DIR" "$INPUT_DIR" "$OUTPUT_DIR" eva "$@"
 }
 
 sig () {
-  "$PCP" "$DIR" sig "$@"
+  "$PCP" "$PKI_DIR" "$INPUT_DIR" "$OUTPUT_DIR"  sig "$@"
 }
 
-clean () {
-  "$PCP" "$DIR" clean "$@"
+clean_pki () {
+  "$PCP" "$PKI_DIR" clean-pki "$@"
+}
+
+clean_signed () {
+  "$PCP" "$OUTPUT_DIR" clean-signed "$@"
 }
 
 
 # Remove the previous PKI and signed files to ensure a clean start
-clean 
+clean_pki
+clean_signed
 
 # Setup PKI with root CA and two SubCAs (one for users, one for devices)
 ca
@@ -67,10 +74,10 @@ gen device consumer-connector.test.aisec.fraunhofer.de
 
 # Simulate component certification represented by signed software manifests
 eva dsc.manifest.json				developer_A evaluator_A certifier_A
-mkdir -p "$DIR/signed/srtm-connector/"
-mkdir -p "$DIR/signed/drtm-connector/"
-cp "$DIR/signed/dsc.manifest.json" "$DIR/signed/srtm-connector/dsc.manifest.json" 
-mv "$DIR/signed/dsc.manifest.json" "$DIR/signed/drtm-connector/dsc.manifest.json" 
+mkdir -p "$OUTPUT_DIR/srtm-connector/"
+mkdir -p "$OUTPUT_DIR/drtm-connector/"
+cp "$OUTPUT_DIR/dsc.manifest.json" "$OUTPUT_DIR/srtm-connector/dsc.manifest.json" 
+mv "$OUTPUT_DIR/dsc.manifest.json" "$OUTPUT_DIR/drtm-connector/dsc.manifest.json" 
 eva drtm-connector/drtm-os.manifest.json		developer_B evaluator_B certifier_A
 eva srtm-connector/srtm-os.manifest.json		developer_B evaluator_B certifier_A
 eva drtm-connector/drtm-rtm.manifest.json		developer_C evaluator_B certifier_A
@@ -78,8 +85,8 @@ eva srtm-connector/srtm-rtm.manifest.json		developer_C evaluator_B certifier_A
 
 # Simulate operational environment certification represented by signed company descriptions
 eva company.description.json				operator_A  evaluator_C certifier_B
-cp "$DIR/signed/company.description.json" "$DIR/signed/srtm-connector/company.description.json" 
-mv "$DIR/signed/company.description.json" "$DIR/signed/drtm-connector/company.description.json" 
+cp "$OUTPUT_DIR/company.description.json" "$OUTPUT_DIR/srtm-connector/company.description.json" 
+mv "$OUTPUT_DIR/company.description.json" "$OUTPUT_DIR/drtm-connector/company.description.json" 
 
 # Provide signed descriptions of the connector setup
 sig operator drtm-connector/drtm-connector.description.json	operator_A

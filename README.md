@@ -32,25 +32,27 @@ cd examples
 ```
 
 ## Explanation and Usage of the PCP Tool
-* The content for software manifests and descriptions needs to be prepared and placed in a folder called ```input```. Examples for those manifests and descriptions can be seen in the ```examples/demo_setup/input```.
+* The content for software manifests and descriptions needs to be prepared and placed in one folder which is passed to the tool as path to the ```input``` folder. Examples for those manifests and descriptions can be seen in the ```examples/demo_setup/input```.
 * The provided "PKI and Certification Process simulation" (PCP) tool in the folder ```pki_and_signing/``` is used to setup the necessary PKI and sign description artefactes.
-* The established keys and certificates for all required CAs, users and connectors are stored in a ```pki``` subfolder of the specified directory.
-* The signed software manifests and descriptions are placed into a subfolder called ```signed```
+* The established keys and certificates for all required CAs, users and connectors are stored in the folder which is passed to the tool as path to a ```pki``` folder. For the example setup it is put into the ```examples/demo_setup/pki```.
+* The signed software manifests and descriptions are placed into the folder which is passed to the tool as path to an ```output``` folder. For the example setup it is put into the ```examples/demo_setup/signed```.
 * The PCP tool allows generation of fresh key pairs for the connector. The private key is placed in ```pki/<fqdn>/<fqdn>-key.pem```, the public key in the folder for device certificates ```pki/devices/<fqdn>.pem```  
     Note: For better protection, the key should be generated and used protected by hardware mechanisms (e.g. inside of a TPM), but for a simple demo setup it can be generated with this tool and can be used for signing a provided attestation report.
 
 The PCP script ```pcp.sh``` offers the following commands:
 
-* ```pcp.sh <dir> ca```  
-		Sets up the folder ```<dir>/pki``` with the initial root CA as well as two intermediary CAs for users and devices and prepares the database for the OCSP servers.
-* ```pcp.sh <dir> gen [developer|evaluator|certifier|operator|device] <common name>```  
+* ```pcp.sh <pki-dir> ca```
+		Sets up the general PKI structure into the folder ```<pki-dir>``` with the root CA as well as two intermediary CAs for users and devices and prepares the database for the OCSP servers.
+* ```pcp.sh <pki-dir> gen [developer|evaluator|certifier|operator|device] <common name>```
 		Generates a private key and respective x509v3 certificate with the specified role and the provided name used as Subject. The certificate is signed by the Device SubCA for connectors and by the User SubCA for the other user roles.
-* ```pcp.sh <dir> eva <name of manifest/company description> <first signer> <second signer> <third signer>```  
+* ```pcp.sh <pki-dir> <input-dir> <output-dir> eva <name of manifest/company description> <first signer> <second signer> <third signer>```
 		Signs the specified software manifest or company description with the keys of the three users specified (developer/operator, evaluator, certifier) to represent the result of a successful certification process.
-* ```pcp.sh <dir> sig [operator|device] <artefact to be signed> <signer>```  
+* ```pcp.sh <pki-dir> <input-dir> <output-dir> sig [operator|device] <artefact to be signed> <signer>```
 		Signs the specified input file with the key specified (operator or device). It should be used for signing connector descriptions (with operator key) or attestation reports (with device key).
-* ```pcp.sh <dir> clean```  
-		Deletes the folders ```<dir>/pki``` and ```<dir>/signed``` with all generated certificates and keys as well as signed manifests or descriptions.
+* ```pcp.sh <pki-dir> clean-ca```
+		Deletes the sub-folders in ```<pki-dir>``` folder with all generated certificates and keys.
+* ```pcp.sh <output-dir> clean-signed```
+		Deletes the content of ```<output-dir>``` which is intended to be signed manifests or descriptions. Warning: Only utilize this command if the directory contains solely files which can be regenerated with the tool!
 
 ## Usage of OCSP Servers
 The designed PKI supports running OCSP Servers for checking revocation of certifications.
