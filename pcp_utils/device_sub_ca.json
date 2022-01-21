@@ -7,5 +7,23 @@
     "O": "Fraunhofer AISEC",
     "OU": "Device SubCA"
   }
-  ]
+  ],
+  "key": {
+    "algo": "ecdsa",
+    "size": 384
+  },
+  "expiry": "43830h",
+  "usages": [
+      "signing",
+      "cert sign",
+      "crl sign",
+      "ocsp signing",
+      "digital signature",
+      "client auth",
+      "server auth"
+  ],
+  "ca_constraint": {
+      "is_ca": true
+  },
+  "ocsp_url": "127.0.0.1:8887"
 }
