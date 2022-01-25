@@ -1,7 +1,7 @@
 {
     "type": "OS Manifest",
     "name": "de.fhg.aisec.ids.os.drtm",
-    "developerCommonname": "AISEC",
+    "developerCommonName": "AISEC",
     "version" : "20210717200000",
 	"validity" : {
 		"notBefore": "20210717200000",
@@ -1074,7 +1074,7 @@
         {
             "type": "TPM Verification",
             "name": "TBOOT",
-            "PCR": 17,
+            "pcr": 17,
             "sha256": "32fa96b898e9b5374ac53a05372389d3f432c32338260c52f8d518325ea4797b",
             "description": "Event type 0x501: tboot"
         }
