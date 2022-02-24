@@ -53,10 +53,10 @@ cfssl sign -ca "$CADIR/ca.pem" -ca-key "$CADIR/ca-key.pem" "$OCSPDIR/ocsp_subcas
 
 # 3. Set up the intermediate CAs (using device_sub_ca.json and user_sub_ca.json)
 cfssl genkey "$PKIINPUT/device_sub_ca.json" | cfssljson -bare "$CADIR/device_sub_ca" 
-cfssl sign -ca "$CADIR/ca.pem" -ca-key "$CADIR/ca-key.pem" -db-config "$OCSPDIR/sqlite_db_subcas.json" "$CADIR/device_sub_ca.csr" | cfssljson -bare "$CADIR/device_sub_ca"
+cfssl sign -ca "$CADIR/ca.pem" -ca-key "$CADIR/ca-key.pem" -db-config "$OCSPDIR/sqlite_db_subcas.json" --config "$PKIINPUT/ca-config.json" -profile intermediate  "$CADIR/device_sub_ca.csr" | cfssljson -bare "$CADIR/device_sub_ca"
 
 cfssl genkey "$PKIINPUT/user_sub_ca.json" | cfssljson -bare "$CADIR/user_sub_ca"  
-cfssl sign -ca "$CADIR/ca.pem" -ca-key "$CADIR/ca-key.pem" -db-config "$OCSPDIR/sqlite_db_subcas.json" "$CADIR/user_sub_ca.csr" | cfssljson -bare "$CADIR/user_sub_ca"
+cfssl sign -ca "$CADIR/ca.pem" -ca-key "$CADIR/ca-key.pem" -db-config "$OCSPDIR/sqlite_db_subcas.json" --config "$PKIINPUT/ca-config.json" -profile intermediate "$CADIR/user_sub_ca.csr" | cfssljson -bare "$CADIR/user_sub_ca"
 
 # 4. Set up OCSP Servers for the User Sub CAs
 cat "$PKIINPUT/certs_users.sql" | sqlite3 "$OCSPDIR/certdb_users.db"
