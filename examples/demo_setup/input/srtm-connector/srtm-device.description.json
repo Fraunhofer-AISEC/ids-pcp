@@ -1,5 +1,5 @@
 {
-	"type" : "Connector Description",
+	"type" : "Device Description",
 	"fqdn" : "consumer-connector.test.aisec.fraunhofer.de",
 	"description" : "Fraunhofer AISEC Test Connector 0",
 	"location" : "Munich, Germany",

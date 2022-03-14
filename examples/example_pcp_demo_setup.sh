@@ -91,8 +91,8 @@ cp "$OUTPUT_DIR/company.description.json" "$OUTPUT_DIR/srtm-connector/company.de
 mv "$OUTPUT_DIR/company.description.json" "$OUTPUT_DIR/drtm-connector/company.description.json" 
 
 # Provide signed descriptions of the connector setup
-sig operator drtm-connector/drtm-connector.description.json	operator_A
-sig operator srtm-connector/srtm-connector.description.json	operator_A
+sig operator drtm-connector/drtm-device.description.json	operator_A
+sig operator srtm-connector/srtm-device.description.json	operator_A
 
 # Sign certificate parameters which can be used to generating device certificates for TPM keys
 sig operator drtm-connector/drtm-ak.certparams.json		operator_A
