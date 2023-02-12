@@ -29,16 +29,26 @@ fi
 PKIINPUT="$(dirname "$0")"
 PKIDIR=$1
 SUBJECT=$3
+
+if [ "$2" = "device" ]; then
+  HOSTS=",\"hosts\": [
+          \"localhost\",
+          \"127.0.0.1\"
+    ]"
+else
+  HOSTS=""
+fi
+
 JSON="{
   \"CN\": \"$SUBJECT\",
   \"names\": [
-  {
-    \"C\": \"DE\",
-    \"L\": \"Garching\",
-    \"O\": \"Fraunhofer AISEC\",
-    \"OU\": \"$2\"
-  }
-  ]
+    {
+      \"C\": \"DE\",
+      \"L\": \"Garching\",
+      \"O\": \"Fraunhofer AISEC\",
+      \"OU\": \"$2\"
+    }
+  ]$HOSTS
 }"
 
 
