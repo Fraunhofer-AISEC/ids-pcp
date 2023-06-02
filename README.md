@@ -8,15 +8,19 @@ The signed artefacts can be utilized to prove the integrity of a connector's sof
 
 ## Prerequistes
 
-* Install Cloudflare's CFSSL used for setting up the PKI
+**Note:** The tooling was developed and tested on Ubuntu 22.04LTS with go version 1.19.2, and cfssl version 1.6.4.
+
+* Install **Go** (https://golang.org/doc/install) in a version greater than 1.16.  
+* Install Cloudflare's **CFSSL** tool used for setting up the PKI  
+according to the instructions in https://github.com/cloudflare/cfssl/tree/master.  
+The following command can be used for go with a version greater than 1.18:
 ```sh
-sudo apt install golang-cfssl
+go install github.com/cloudflare/cfssl/cmd/...@latest
 ```
-* Install SqLite3 which is used by CFSSL to manage the databases for OCSP providers
+* Install **SqLite3** which is used by CFSSL to manage the databases for OCSP providers
 ```sh
 sudo apt install sqlite3
 ```
-* Install Go (https://golang.org/doc/install) which is used for generating the JSON Web Signatures
 * Compile the program used for signing artefacts as JSON Web Signature (based on [Go JOSE](https://pkg.go.dev/gopkg.in/square/go-jose.v2))
 ``` sh
 cd pcp_utils

@@ -43,7 +43,7 @@ mkdir -p $DEVICEDIR
 cfssl gencert -initca "$PKIINPUT/ca.json" | cfssljson -bare "$CADIR/ca"
 
 # 2. Set up an OCSP Server for the Root CA
-# Setup the database based on the .sql file derived from ~/go/src/github.com/cloudflare/cfssl/certdb/sqlite/migrations/001_CreateCertificates.sql
+# Setup the database based on the .sql file derived from the files in https://github.com/cloudflare/cfssl/tree/master/certdb/mysql/migrations/
 cat "$PKIINPUT/certs_subcas.sql" | sqlite3 "$OCSPDIR/certdb_subcas.db"
 echo "{\"driver\":\"sqlite3\",\"data_source\":\"$OCSPDIR/certdb_subcas.db\"}" > "$OCSPDIR/sqlite_db_subcas.json"
 
